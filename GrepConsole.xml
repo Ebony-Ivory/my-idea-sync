@@ -1,5 +1,45 @@
 <application>
   <component name="GrepConsole">
+    <option name="grepHistory">
+      <list>
+        <GrepCompositeModel>
+          <option name="models">
+            <list>
+              <GrepModel>
+                <option name="expression" value="2023-06-29 13:30:46.489 INFO  --- [           main] trationDelegate$BeanPostProcessorChecker&#10;                : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$69f9c50a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)&#10;2023-06-29 13:30:46.512 INFO  --- [           main] trationDelegate$BeanPostProcessorChecker&#10;                : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)&#10;2023-06-29 13:30:46.519 INFO  --- [           main] trationDelegate$BeanPostProcessorChecker&#10;                : Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)&#10;2023-06-29 13:30:47.658 INFO  --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer &#10;                : Tomcat initialized with port(s): 8080 (http)&#10;2023-06-29 13:30:47.679 INFO  --- [           main] org.apache.catalina.core.StandardService&#10;                : Starting service [Tomcat]&#10;2023-06-29 13:30:47.680 INFO  --- [           main] org.apache.catalina.core.StandardEngine &#10;                : Starting Servlet engine: [Apache Tomcat/9.0.41]&#10;2023-06-29 13:30:47.833 INFO  --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]      &#10;                : Initializing Spring embedded WebApplicationContext&#10;2023-06-29 13:30:47.833 INFO  --- [           main] w.s.c.ServletWebServerApplicationContext&#10;                : Root WebApplicationContext: initialization completed in 3539 ms&#10;2023-06-29 13:30:48.368 INFO  --- [           main] c.b.d.d.DynamicDataSourceCreator        &#10;                : 动态数据源-检测到druid存在,如配置中未指定type,druid会默认配置&#10;2023-06-29 13:30:48.692 INFO  --- [           main] com.alibaba.druid.pool.DruidDataSource  &#10;                : {dataSource-1,master} inited&#10;2023-06-29 13:30:48.693 INFO  --- [           main] c.b.d.d.DynamicRoutingDataSource        &#10;                : 初始共加载 1 个数据源&#10;2023-06-29 13:30:48.697 INFO  --- [           main] c.b.d.d.DynamicRoutingDataSource        &#10;                : 动态数据源-加载 master 成功&#10;2023-06-29 13:30:48.697 INFO  --- [           main] c.b.d.d.DynamicRoutingDataSource        &#10;                : 当前的默认数据源是单数据源，数据源名为 master&#10; _ _   |_  _ _|_. ___ _ |    _ &#10;| | |\/|_)(_| | |_\  |_)||_|_\ &#10;     /               |         " />
+              </GrepModel>
+            </list>
+          </option>
+        </GrepCompositeModel>
+        <GrepCompositeModel>
+          <option name="models">
+            <list>
+              <GrepModel>
+                <option name="expression" value="master" />
+              </GrepModel>
+            </list>
+          </option>
+        </GrepCompositeModel>
+        <GrepCompositeModel>
+          <option name="models">
+            <list>
+              <GrepModel>
+                <option name="expression" value="DocumentationPluginsBootstrapper" />
+              </GrepModel>
+            </list>
+          </option>
+        </GrepCompositeModel>
+        <GrepCompositeModel>
+          <option name="models">
+            <list>
+              <GrepModel>
+                <option name="expression" value="" />
+              </GrepModel>
+            </list>
+          </option>
+        </GrepCompositeModel>
+      </list>
+    </option>
     <option name="profiles">
       <list>
         <Profile>
@@ -158,5 +198,6 @@
         </Profile>
       </list>
     </option>
+    <option name="version" value="2" />
   </component>
 </application>
