@@ -1,0 +1,32 @@
+<templateSet group="LYK">
+  <template name="A_02默认Lombok" value="import lombok.*;&#10;&#10;@Data&#10;@Builder&#10;@NoArgsConstructor&#10;@AllArgsConstructor" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="A_01简单描述" value="/**&#10;* $end$&#10;*/" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="A_03常用类属性" value="public String aaaaaa;&#10;public int bbbbb;&#10;public Date ccccc;&#10;public List&lt;TTTTT&gt; ddddd;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="A_04代码分块" value="//region desc&#10;&#10;//endregion" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="**" value="**&#10; * $end$&#10; * @author LYK&#10; * @date $data$&#10;$param$ &#10; * @return $return$&#10; * @throws Exception 抛出异常&#10; */" shortcut="ENTER" description="函数注释" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="data" expression="date(&quot;yyyy/MM/dd&quot;)" defaultValue="" alwaysStopAt="false" />
+    <variable name="param" expression="groovyScript(&quot;def result=''; def params=\&quot;${_1}\&quot;.replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList(); for(i = 0; i &lt; params.size(); i++) {result+=' * @param ' + params[i] + ((i &lt; params.size() - 1) ? '\\n':'')}; return result&quot;, methodParameters())" defaultValue="" alwaysStopAt="false" />
+    <variable name="return" expression="groovyScript(&quot;def result=''; def params=\&quot;${_1}\&quot;.replaceAll('[\\\\[|\\\\]|\\\\s]', '').split('&lt;').toList(); for(i = 0; i &lt; params.size(); i++) {if(i!=0){result+='&lt;';}; def p1=params[i].split(',').toList(); for(i2 = 0; i2 &lt; p1.size(); i2++) { def p2=p1[i2].split('\\\\.').toList(); result+=p2[p2.size()-1]; if(i2!=p1.size()-1){result+=','} } ; }; return result&quot;, methodReturnType())" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,17 @@
+<keymap version="1" name="Windows 副本" parent="$default">
+  <action id="Android.Designer.AutoArrange" />
+  <action id="Diff.ShowSettingsPopup" />
+  <action id="EditorCodeBlockEndWithSelection" />
+  <action id="EditorDeleteLine">
+    <keyboard-shortcut first-keystroke="ctrl y" />
+    <keyboard-shortcut first-keystroke="ctrl l" />
+  </action>
+  <action id="FindNext">
+    <keyboard-shortcut first-keystroke="f3" />
+  </action>
+  <action id="Terminal.ClearBuffer" />
+  <action id="Vcs.Log.FocusTextFilter" />
+  <action id="com.pwhxbdk.SwaggerTool">
+    <keyboard-shortcut first-keystroke="shift ctrl close_bracket" />
+  </action>
+</keymap>
