@@ -115,6 +115,12 @@
       <path value="编辑器弹出窗口菜单" />
       <option name="myInitialPosition" value="-1" />
     </group>
+    <group value="VersionControlsGroup" is_group="true" action_type="-1" position="7">
+      <path value="root" />
+      <path value="编辑器弹出窗口菜单" />
+      <path value="编辑器弹出窗口菜单操作(2)" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
     <group value="EditorPopupMenu.Run" is_group="true" action_type="-1" position="5">
       <path value="root" />
       <path value="编辑器弹出窗口菜单" />
